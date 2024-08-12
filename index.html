@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Thafany Passos - Pilares da Programação Orientada a Objeto</title>
+    <style>
+
+        section{
+            background-color: #b6d2e7;
+            border-radius: 20px;
+            
+        }
+        body{
+            background-color: #FBF5F3;
+            border: 30px solid #5AA9E6;
+            border-radius: 10px;
+            box-shadow: 10px 20px gray;
+        }    
+        .título{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            text-align: center;
+            color: #C81D25;
+        }
+        h2{
+            color: #5AA9E6;
+        }
+        .texto{
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: block;
+            justify-content: center;
+            align-items: center;
+            margin: 70px;
+        }
+        .img{
+            margin: auto;
+            display: block;
+            width: 60%;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="título">
+        <h1>Pilares da Programação Orientada a Objeto</h1>
+    </div>
+
+    <div class="texto">
+        <h2>Introdução</h2>
+        <p>A Programação Orientada a Objetos, também conhecida pela sigla POO, é uma forma de programação que introduz o conceito de objetos como elementos centrais na construção dos sistemas. Utilizando a criação de diversos objetos que combinam atributos (características) e métodos (comportamentos) desses objetos. A POO possui quatro pilares que são fundamentais para sua compreensão e construção. Esses quatro pilares são: Encapsulamento, Herança, Polimorfismo e Abstração. 
+            Além disso, é bom salientar sobre as classes, que são muito usadas quando falamos sobre a Programação Orientada a Objetos. Classes são os modelos onde surgirão os objetos. Assim, as classes definem algumas propriedades e métodos que deverão fazer parte do objeto que derivar dela ou então, como dizemos, os objetos que serão instanciados a partir dela.
+        </p>
+    </div>
+
+    <div class="texto">
+        <h2>Encapsulamento</h2>
+        <p>Começando pelo encapsulamento, esse pilar visa controlar o acesso aos atributos e métodos de um objeto, ou seja, suas características e comportamentos. Isso é alcançado através da definição de níveis de visibilidade, como público, protegido e privado. A ideia por trás do encapsulamento é que os detalhes internos de um objeto devem ser ocultados do mundo exterior, da interface pública. Ao ocultar os detalhes internos, é possível proteger os dados de alterações indesejadas e manter a integridade do objeto. Esse pilar promove a modularidade, facilita a manutenção e evolução do código e ajuda a prevenir erros decorrentes de acessos incorretos aos dados. 
+            Tudo o que o usuário externo precisa conhecer a respeito de uma classe encontra-se em propriedades ou métodos declarados como públicos. 
+            Somente os códigos membros da classe são capazes de acessar seus métodos e variáveis privados. Isso garante que não ocorrerão ações inadequadas, mas exige que a interface pública seja planejada com cautela para que o funcionamento interno da classe não seja muito exposto. 
+            Por conta dessa técnica, o conhecimento a respeito da implementação interna da classe é desnecessário do ponto de vista do objeto, uma vez que isso passa a ser responsabilidade dos métodos internos da classe. 
+            Dominar esse conceito é fundamental, uma vez que com ele é possível deixar o código mais legível, funcional e reutilizável.  Para isso, é criada uma estrutura que contém métodos que podem ser utilizados por qualquer outra classe, sem causar inconsistências no desenvolvimento de um código. <br> <br>
+            Na prática, isso é feito por meio de dois métodos: os getters e os setters. O primeiro tem por objetivo retornar o valor que lhe foi pedido 
+            Já o segundo recebe como argumento uma informação, que pode ser qualquer tipo de dados suportados pela linguagem. 
+            Podemos dizer, portanto, que os objetos possuem uma parte interna, os dados, que não podem ser acessados por outros objetos do sistema, e outra externa, os métodos, que permitem a alteração ou verificação de seu estado.
+            Uma analogia para simplificar o funcionamento do encapsulamento é o uso do celular. Quando usamos um telefone, interagimos com uma interface simples, como a tela, botões e aplicativos. No entanto, não pensamos na complexidade interna do hardware, o sistema operacional, ou outros sistemas. O telefone encapsula todos esses detalhes complexos e fornece uma interface simples para o usuário. Assim como é feito e usado encapsulamento na construção de um código.            
+        </p>
+    </div>
+    <div class="img">
+        <p>
+          <img src="https://hermes.dio.me/assets/articles/4f67414f-7400-4567-afd3-0d193bc59514.png" width="600px" alt="">
+        </p>
+    </div>
+    <div class="texto">
+        <p>Benefícios: 
+            Vale ressaltar quais são os benefícios que esse pilar oferece para a Programação Orientada a Objeto, sendo eles: 
+            <ul>
+                <li> O objeto é disponibilizado ao usuário com toda a sua funcionalidade, sem a necessidade de conhecermos seu funcionamento ou armazenamento interno;</li>
+                <li> É possível modificar um objeto internamente, acrescentando métodos, sem que isto afete os outros componentes do sistema que utilizam o objeto modificado; </li>
+                <li>O processo de desenvolvimento de sistemas é acelerado e simplificado, já que os usuários dos objetos não precisam necessariamente saber como eles são constituídos internamente;</li>
+            </ul>
+        </p>
+    </div>
+
+
+    <div class="texto">
+        <h2>Herança</h2>
+        <p>A Herança possibilita que as classes compartilhem seus atributos, métodos e outros membros da classe entre si. Para a ligação entre as classes, a herança adota um relacionamento esquematizado hierarquicamente. 
+            Na Herança temos dois tipos principais de classe: 
+            <li>Classe Base: A classe que concede as características a uma outra classe. </li>
+            <li>Classe Derivada: A classe que herda as características da classe base. </li>
+            <br>Herança, na prática, significa a possibilidade de construir objetos especializados que herdam as características de objetos mais generalistas, ou ainda, a herança uma maneira de reutilizar código a medida que podemos aproveitar os atributos e métodos de classes já existentes para gerar novas classes mais específicas que aproveitarão os recursos da classe hierarquicamente superior. 
+            Notem como estas hierarquias podem ser facilmente descritas numa estrutura de árvore. Nesta estrutura a raiz da árvore é o agente da qual originam todos os outros agentes. Podemos dizer que cada agente herda as características dos seus antecessores.            
+        </p>
+    </div>
+    <div class="texto">
+        <h4>Superclasse e subclasse:</h4><br>
+        Superclasses e subclasses 
+        Em POO todo objeto de uma classe construída pelo usuário da linguagem é também um objeto de outra classe. 
+        Por exemplo, na hierarquia da área da saúde, podemos dizer que pessoa é uma superclasse e que empregados é uma subclasse de pessoa. 
+        A herança normalmente produz subclasses mais especializadas, mais específicas, que as superclasses. Notem que, o termo subclasses pode trazer a ideia errada de que uma subclasse possa ter menos recursos que a superclasse mas ocorre exatamente o inverso, uma subclasse é mais especializada que a superclasse.  
+        <br><br>
+        Ademais, até agora vimos que os membros (atributos e comportamentos) de uma classe poderiam ser rotulados como public ou private. Com a inclusão do conceito de herança podemos apresentar um novo rótulo, o protected. 
+        O protected permite que os membros das subclasses, ou de outras classes de um mesmo pacote, podem acessar os membros protected da superclasse. 
+        Vejam que o rótulo protected serve como uma proteção intermediária entre os rótulos private, bastante restritivo, e public, aberto. 
+        <br><br>
+        A herança é um tipo de relacionamento entre classes que significa que uma classe é outra. É uma propriedade dos objetos que permite a criação de uma hierarquia entre eles, onde os descendentes herdem dos seus ancestrais <br> <br>
+        Como exemplo temos o seguinte: <br>
+        Uma superclasse chamada de Cliente tem os atributos Codigo e Endereco e possui o método LocalizarEndereco().
+        E as classes ClienteFisico e ClienteJuridico são subclasses da classe Cliente e por isso elas herdam os atributos e método da sua superclasse.
+    </div>
+    <div class="img">
+        <p>
+          <img src="hera1.png" width="400px" alt="">
+        </p>
+    </div>
+    <div class="texto">
+        <p>Assim temos:<br>
+            <li>Atributos herdados da superclasse Cliente: Codigo e Endereco;</li>
+            <li>Atributos definidos na classe: Nome e CPF</li>
+            <li>Método herdado da superclasse Cliente: LocalizarEndereco();</li>
+            <li>Método definido na classe: VerificarCPF().</li> <br>
+            E essa lógica é seguida com as outras subclasses.     
+            <br><br>
+            Consideremos a criação de um cadastro de cachorros do reino Animal. Entendemos que cada Cachorro é um Animal, mais nem todo Animal é um Cachorro. Essa relação nos obriga a criar uma extensão da classe Animal a fim de que a mesma contenha os dados específicos referentes aos cachorros. Assim, a extensão criada acaba herdando os membros existentes na definição da classe Animal. <br>
+            Nesta classe, adicione o seguinte código:
+        </p>
+    </div>
+    <div class="img">
+        <p>
+          <img src="hera2.png" width="600px" alt="">
+        </p>
+    </div>
+    <div class="texto">
+        Outrossim, como principal benefício da herança temos a reutilização de código, evitando assim que a necessidade de repetir as informações da classe e podemos evitar a duplicação de código <br>
+        Uma analogia para simplificar o conceito seria a seguinte: Imagine uma classe InstrumentoMusical com atributos e métodos básicos, como tocarNota(). A partir dessa classe, você pode ter subclasses como Piano, Guitarra, e Violino. Cada um desses instrumentos herda a capacidade básica de tocar notas e pode ter características adicionais, como teclas no piano ou cordas na guitarra.
+    </div>
+
+
+    <div class="texto">
+        <h2>Polimorfismo</h2>
+        <p>Agora, abordando sobre outro pilar dessa programação, definimos Polimorfismo como um princípio a partir do qual as classes derivadas de uma única classe base são capazes de invocar os métodos que, embora apresentem a mesma assinatura, comportam-se de maneira diferente para cada uma das classes derivadas. O Polimorfismo é um mecanismo por meio do qual selecionamos as funcionalidades utilizadas de forma dinâmica por um programa no decorrer de sua execução. Com o Polimorfismo, os mesmos atributos e objetos podem ser utilizados em objetos distintos, porém, com implementações lógicas diferentes.
+            Isto é, polimorfismo deriva da palavra polimorfo, que significa multiforme, ou que pode variar a forma. Para a POO, polimorfismo é a habilidade de objetos de classes diferentes responderem a mesma mensagem de diferentes maneiras. Ou seja, várias formas de responder à mesma mensagem.
+            Por exemplo: podemos dizer que uma classe chamada Vendedor e outra chamada Diretor podem ter como base uma classe chamada Pessoa, com um método chamado CalcularVendas. Se este método (definido na classe base) se comportar de maneira para o Vendedor e para o Diretor, ele será considerado um método polimórfico, ou seja, um método de várias formas.
+            Assim podemos ter:            
+        </p>
+    </div>
+    <div class="img">
+        <p>
+           <img src="poli.png" width="500px" alt="">
+        </p>
+    </div>
+    <div class="img">
+        <p>
+            <img src="poli2.png" width="500px" alt="">
+         </p>
+    </div>
+    <div class="img">
+        <p>
+            <img src="poli3.png" width="500px" alt="">
+        </p>
+    </div>
+    <div class="texto">
+        <p>
+            Nessas classes temos o mesmo método, mas com a codificações diferentes.
+            <br><br>
+            Além disso, um dos principais benefícios do polimorfismo é a reutilização de código, uma vez que é possível criar classes genéricas que podem ser utilizadas de maneira flexível em diferentes contextos. Além disso, o polimorfismo torna o código mais legível e organizado, facilitando a manutenção e a evolução do sistema.
+            <br><br>
+            Analogia/Exemplo: Um dono de uma fábrica de brinquedos solicitou que seus engenheiros criassem um mesmo controle remoto para todos os brinquedos de sua fábrica. A única restrição era que cada brinquedo atendesse aos comandos específicos definidos pelo controle.
+            O controle remoto teria vários botões, sendo que todos eles seriam úteis para todos os brinquedos. Assim, quando o usuário clicasse no botão mover, o controle enviaria o sinal MOVER para todos os brinquedos que estivessem no raio de dois metros. 
+            Assim, quando o brinquedo recebe o sinal MOVER, ele se move de acordo com a sua função. Para o avião, mover significa VOAR, para o barco significa NAVEGAR, e para o automóvel, CORRER. Observe que os brinquedos respondem ao mesmo sinal de formas diferentes. Temos aqui então um caso de polimorfismo.
+        </p>
+    </div>     
+    
+    <div class="texto">
+        <h2>Abstração</h2>
+        <p>
+            A Abstração é considerada o pontapé inicial dentro de qualquer linguagem Orientada a Objetos.
+            A Abstração na Programação Orientada a Objetos acontece bem antes do código e é muito importante que seja bem definida. Assim, facilitará a arquitetura do projeto como um todo. Para uma ideia ser bem executada, antes ela precisa ser bem estruturada.
+            É utilizada para a definição de entidades do mundo real. Sendo onde são criadas as classes. Essas entidades são consideradas tudo que é real, tendo como consideração as suas características e ações, veja na figura como funciona.
+        </p>
+    </div>
+    <div class="img">
+        <p>
+            <img src="abs1.png" alt="">
+        </p>
+    </div>
+    <div class="texto">
+        <p>
+            Exemplo de abstração da classe Conta: 
+        </p>
+    </div>
+    <div class="img">
+        <p>
+            <img src="abs2.png" width="500px"  alt="">
+        </p>
+    </div>
+    <div class="texto">
+        <p>
+            Como abstrair um modelo que faça sentido como um objeto?
+            Para facilitar o processo de abstração na Programação Orientada a Objetos, definimos 3 princípios para uma abstração concisa, são eles: 
+            <br><br>
+            <ul>
+                <li> O que o objeto precisa ser?</li>
+            </ul>           
+        </p>
+    </div>
+    <div class="img">
+        <p>
+            <img src="abs3.png" alt="">
+        </p>
+    </div>
+    <div class="texto">
+        <p>
+            <ul>
+                <li> O que ele faz?</li>
+            </ul>
+        </p>
+    </div>
+    <div class="img">
+        <p>
+            <img src="abs4.png" alt="">
+        </p>
+    </div>
+    <div class="texto">
+        <p>
+            <ul>
+                <li>E o que ele deve ter?</li>
+            </ul>
+        </p>
+    </div>
+    <div class="img">
+        <p>
+            <img src="abs5.png" alt="">
+        </p>
+    </div>
+    <div class="texto">
+        Nota-se que, com estes 3 princípios, podemos criar um objeto de forma sucinta e coesa, sem utilizar de atributos os métodos desnecessários para o contexto.
+        E esse conceito nos orienta a construir códigos que sejam relacionados com objetos da nossa vida real.
+    </div>
+    <div class="texto">
+        <p>Benefícios: A abstração traz vários benefícios para o desenvolvimento de software, como: 
+            <ul>
+                <li> Facilitar a compreensão do código, pois permite que os desenvolvedores vejam o problema de forma mais simples e clara;</li>
+                <li> Melhorar a capacidade de reutilização do código, pois permite que os desenvolvedores criem código modular e reutilizável. Por exemplo, uma classe Gato pode herdar da classe Animal; </li>
+                <li>Evitar erros, pois permite que os desenvolvedores escondam detalhes de implementação que podem causar problemas. Por exemplo, uma classe Aplicativo pode ter uma classe interna Conexão que representa uma conexão com um banco de dados.</li>
+            </ul>
+        </p>
+    </div>
+
+    <div class="texto">
+        <h2>Conclusão</h2>
+        <p>
+            Com todo o desenvolvimento dessa pesquisa, é notável a importância do Encapsulamento, Herança, Polimorfismo e Abstração para a Programação Orientada a Objeto, uma vez que, esses pilares permiti a criação de um código funcional e de completa compreensão tanto dos desenvolvedores quanto dos usuários. Isto é, permitem a criação de sistemas flexíveis, reutilizáveis e de fácil manutenção. 
+        </p>
+    </div>
+
+    <div class="texto">
+        <h2>Perguntas Frequentes:</h2>
+        <section class="title2">
+            <details>
+                <summary class="title3"><b>Quando usar encapsulamento</b>
+                    <p>Basicamente sempre, pois a interface, a forma como classes e objetos conversam um com o outro, deve sempre estar isolada da forma como executam o que se propuseram a fazer. Essa execução é a implementação do código. Como diz o livro Design patterns: programe voltado à interface, não à implementação.</p>
+                </summary>
+            </details>
+
+            <details>
+                <summary class="title3"><b>Como tornar uma classe privada no Java?</b>
+                    <p>Para fazer isso no Java, basta declarar que os atributos não podem ser acessados de fora da classe por meio da palavra-chave private</p>
+                </summary>
+            </details>
+
+            <details>
+                <summary class="title3"><b>O que signifca a generalização e espezialização da Herança?</b>
+                    <p>A especialização acontece quando estamos descendo na hierarquia de classes, ou seja, indo de uma classe mais genérica (por exemplo, superclasse Cliente) para as classes mais específicas (por exemplo, subclasses ClienteFisico e ClienteJuridico). Já a generalização é o inverso: partimos das classes mais específicas e vamos subindo na hierarquia de classes, indo para uma classe mais genérica.</p>
+                </summary>
+            </details>
+
+            <details>
+                <summary class="title3"><b>Qual a diferença entre o Polimorfismo e a Herança?</b>
+                    <p>Resumidamente, A Herança fala a respeito das classes e como as subclasses herdam características das superclasses, dessa forma os atribustos da superclasse permanece na sub porém essa possui mais especificações. Por outro lado o polimorfismo refere-se a possibilidade de um objeto ou classe mudar de forma, ou seja, responderem a mesma mensagem de diferentes maneiras </p>
+                </summary>
+            </details>
+            
+            <details>
+                <summary class="title3"><b>Qual é a importância da abstração?</b>
+                    <p>A abstração permite que os desenvolvedores criem as soluções do software enquanto continua com a simplicidade e clareza</p>
+                </summary>
+            </details>
+
+            <details>
+                <summary class="title3"><b>Qual é a difença entre a abstração e o encapsulamento?</b>
+                    <p>A abstração permite definir os atribustos do objeto e/ou classe enquanto o encapsulamento permite ocultar dados para protege-ló.</p>
+                </summary>
+            </details>
+        </section>
+    </div>
+
+    
+    <div class="texto">
+        <h2>Referências Bibliográficas</h2>
+        <li>https://luby.com.br/desenvolvimento/software/conceitos/abstracao-orientada-a-objetos/</li>
+        <li>https://coodesh.com/blog/candidates/metodologias/conceitos-de-poo-abstracao-e-encapsulamento/ </li>
+        <li>https://www.dio.me/articles/os-4-pilares-da-programacao-orientada-a-objetos-SSU4Q9</li>
+        <li>https://www.alura.com.br/artigos/o-que-e-encapsulamento </li>
+        <li>https://www.devmedia.com.br/conceitos-encapsulamento-programacao-orientada-aobjetos/18702</li>
+        <li>https://blog.betrybe.com/tecnologia/encapsulamento/ </li>
+        <li>https://www.devmedia.com.br/conceitos-e-exemplos-heranca-programacao-orientada-a-objetos-parte-1/18579 </li>
+        <li>https://dcm.ffclrp.usp.br/~evandro/ibm1030/constru/heranca.html </li>
+        <li>https://blog.grancursosonline.com.br/heranca-na-programacao-orientada-a-objetos/ </li>
+        <li>https://www.inf.ufsc.br/~frank.siqueira/INE5605/9.Heranca.pdf</li>
+        <li>https://www.devmedia.com.br/conceitos-e-exemplos-polimorfismo-programacao-orientada-a-objetos/18701 </li>
+        <li>https://materialpublic.imd.ufrn.br/curso/disciplina/5/76/8/2 </li>
+        <li>https://labvital.com.br/glossario/o-que-e-polimorfismo/#:~:text=Vantagens%20do%20Polimorfismo&text=Uma%20das%20principais%20vantagens%20%C3%A9,e%20a%20evolu%C3%A7%C3%A3o%20do%20sistema.</li>
+    </div>
+    
+</body>
+</html>
